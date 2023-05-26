@@ -1,0 +1,8 @@
+body {
+    background-color: lightblue; }
+    body h1 {
+      text-align: center; }
+    body p {
+      display: flex;
+      justify-content: space-between; }
+  

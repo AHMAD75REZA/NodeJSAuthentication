@@ -1,0 +1,30 @@
+{
+  "name": "nodeauthentication",
+  "version": "1.0.0",
+  "description": "Check Authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"No test specified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AHMAD75REZA/NodejsAuthentication.git"
+  },
+  "keywords": [
+    "Authentication"
+  ],
+  "author": "Ahmad Reza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AHMAD75REZA/NodejsAuthentication/issues"
+  },
+  "homepage": "https://github.com/AHMAD75REZA/NodejsAuthentication#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^5.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.2.1"
+  }
+}
