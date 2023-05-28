@@ -8,6 +8,7 @@ const db = require('./config/mongoose');
 const MongoStore = require('connect-mongo');
 const path = require('path');
 const flash = require('connect-flash');
+const passport = require("passport");
 const session = require('express-session')
 const customMware = require('./config/middleware');
 
@@ -24,10 +25,14 @@ app.use(session({
     saveUninitialized: false
   }));
 
+  app.use(passport.initialize());
+app.use(passport.session());
+// app.use(passport.setAuthenticatedUser);
+
  app.use(flash());
 app.use(customMware.setFlash);
 // use express router
-app.use('/', require('./routes/users'));
+app.use('/users', require('./routes/users'));
 // app.use('/', routes);
 // app.use('/users', users);
 app.use(  'create' ,express.static(path.join(__dirname, 'create')));
